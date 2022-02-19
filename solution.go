@@ -10,6 +10,13 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
+const (
+	SidesCircle = 0
+	SidesTriangle = 3
+	SidesSquare = 4
+)
+
+
 func CalcSquare(sideLen float64, sidesNum uint8) float64 {
 	var square float64
 	switch sidesNum {
